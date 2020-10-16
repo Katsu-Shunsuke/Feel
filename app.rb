@@ -5,7 +5,7 @@ require 'sinatra/reloader' if development?
 require './models'
 require 'dotenv/load'
 
-require 'gon'
+require 'gon-sinatra'
 
 enable :sessions
 
@@ -15,9 +15,11 @@ helpers do
   end
 end
 
+
 get '/' do
   @posts=Post.all
   @users=User.all
+  @List=[3,4,5]
   erb :main
 end
 

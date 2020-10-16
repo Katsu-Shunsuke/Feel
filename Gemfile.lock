@@ -69,11 +69,8 @@ GEM
       rake
     globalid (0.4.2)
       activesupport (>= 4.2.0)
-    gon (6.4.0)
-      actionpack (>= 3.0.20)
-      i18n (>= 0.7)
-      multi_json
-      request_store (>= 1.0)
+    gon-sinatra (0.1.2)
+      sinatra
     http (4.4.1)
       addressable (~> 2.3)
       http-cookie (~> 1.0)
@@ -150,8 +147,6 @@ GEM
     rake (13.0.1)
     rcodetools (0.8.5.0)
     regexp_parser (1.8.1)
-    request_store (1.5.0)
-      rack (>= 1.4)
     rest-client (2.1.0)
       http-accept (>= 1.7.0, < 2.0)
       http-cookie (>= 1.0.2, < 2.0)
@@ -219,7 +214,7 @@ DEPENDENCIES
   debase
   dotenv
   fastri
-  gon
+  gon-sinatra
   http
   pg (= 0.21.0)
   pry
