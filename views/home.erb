@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ホーム</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/home.css">
+</head>
+<body>
+  <div class="post">
+    <h1><%= @user.name %>さんの投稿
+      <% if @user.id!=current_user.id %>
+        <% follow=Follow.where(follow_id: current_user.id) %>
+        <% if follow.find_by(opponent_id: @user.id).nil?%>
+          <a href="/follow/<%= @user.id %>">フォロー</a>
+        <% else %>
+          <a href="/remove/<%= @user.id %>">フォロー解除</a>
+        <% end %>
+      <% end %>
+    </h1>
+    <h2>全<%= @posts_user.count %>個</h2>
+
+
+    <% @posts_user.each do |posts_user| %>
+      <a href="/home/<%= posts_user.user_id %>"><%= @user.name %></a>
+    <% end %>
+  </div>
+</body>
+</html>

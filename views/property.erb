@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Property</title>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/property.css">
+</head>
+<body>
+  <h1><%= @user.name %>さんの特性</h1>
+  <section class="center-vertical">
+  <form
+    <% property_user=Property.find_by(user_id:current_user.id)%>
+    <% if !property_user.nil? %>
+      action="/property/edit"
+    <% else %>
+      action="/property/new"
+    <% end %> method="post">
+
+    </section>
+    <h2>What's your favorite COLOR..</h2>
+    <div class="container">
+      <div class="radio-tile-group">
+        <div class="input-container">
+          <input id="red" class="radio-button" type="radio" name="radio1" value="1"
+          <% if !@property.nil? %>
+            <% if @property.favorite1==1 %>
+              checked="checked"
+            <% end %>
+          <% end %> required>
+          <div class="radio-tile">
+            <div class="red">
+              <label for="red" class="radio-tile-label">Red</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="input-container">
+          <input id="green" class="radio-button" type="radio" name="radio1" value="2"
+          <% if !@property.nil? %>
+            <% if @property.favorite1==2 %>
+              checked="checked"
+            <% end %>
+          <% end %> required>
+          <div class="radio-tile">
+            <div class="green">
+              <label for="green" class="radio-tile-label">Green</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="input-container">
+          <input id="blue" class="radio-button" type="radio" name="radio1" value="3"
+          <% if !@property.nil? %>
+            <% if @property.favorite1==3 %>
+              checked="checked"
+            <% end %>
+          <% end %> required>
+          <div class="radio-tile">
+            <div class="blue">
+              <label for="blue" class="radio-tile-label">Blue</label>
+            </div>
+          </div>
+        </div>
+        <div class="input-container">
+          <input id="yellow" class="radio-button" type="radio" name="radio1" value="4"
+          <% if !@property.nil? %>
+            <% if @property.favorite1==4 %>
+              checked="checked"
+            <% end %>
+          <% end %> required>
+          <div class="radio-tile">
+            <div class="yellow">
+              <label for="yellow" class="radio-tile-label">Yellow</label>
+            </div>
+          </div>
+        </div>
+        <div class="input-container">
+          <input id="cyan" class="radio-button" type="radio" name="radio1" value="5"
+          <% if !@property.nil? %>
+            <% if @property.favorite1==5 %>
+              checked="checked"
+            <% end %>
+          <% end %> required>
+          <div class="radio-tile">
+            <div class="cyan">
+              <label for="cyan" class="radio-tile-label">Cyan</label>
+            </div>
+          </div>
+        </div>
+        <div class="input-container">
+          <input id="magenta" class="radio-button" type="radio" name="radio1" value="6"
+          <% if !@property.nil? %>
+            <% if @property.favorite1==6 %>
+              checked="checked"
+            <% end %>
+          <% end %> required>
+          <div class="radio-tile">
+            <div class="magenta">
+              <label for="magenta" class="radio-tile-label">Magenta</label>
+            </div>
+          </div>
+        </div>
+        <div class="input-container">
+          <input id="black" class="radio-button" type="radio" name="radio1" value="7"
+          <% if !@property.nil? %>
+            <% if @property.favorite1==7 %>
+              checked="checked"
+            <% end %>
+          <% end %> required>
+          <div class="radio-tile">
+            <div class="black">
+              <label for="black" class="radio-tile-label">Black</label>
+            </div>
+          </div>
+        </div>
+        <div class="input-container">
+          <input id="white" class="radio-button" type="radio" name="radio1" value="8"
+          <% if !@property.nil? %>
+            <% if @property.favorite1==8 %>
+              checked="checked"
+            <% end %>
+          <% end %> required>
+          <div class="radio-tile">
+            <div class="white">
+              <label for="white" class="radio-tile-label">White</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  <h2>What's your favorite SEASON..</h2>
+    <div class="container">
+        <div class="radio-tile-group">
+          <div class="input-container">
+            <input id="spring" class="radio-button" type="radio" name="radio2" value="1"
+            <% if !@property.nil? %>
+              <% if @property.favorite2==1 %>
+                checked="checked"
+              <% end %>
+            <% end %> required>
+            <div class="radio-tile">
+              <div class="spring">
+                <label for="spring" class="radio-tile-label">Spring</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="input-container">
+            <input id="summer" class="radio-button" type="radio" name="radio2" value="2"
+            <% if !@property.nil? %>
+              <% if @property.favorite2==2 %>
+                checked="checked"
+              <% end %>
+            <% end %> required>
+            <div class="radio-tile">
+              <div class="summer">
+                <label for="summer" class="radio-tile-label">Summer</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="input-container">
+            <input id="autumn" class="radio-button" type="radio" name="radio2" value="3"
+            <% if !@property.nil? %>
+              <% if @property.favorite2==3 %>
+                checked="checked"
+              <% end %>
+            <% end %> required>
+            <div class="radio-tile">
+              <div class="autumn">
+                <label for="autumn" class="radio-tile-label">Autumn</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="input-container">
+            <input id="winter" class="radio-button" type="radio" name="radio2" value="4"
+            <% if !@property.nil? %>
+              <% if @property.favorite2==4 %>
+                checked="checked"
+              <% end %>
+            <% end %> required>
+            <div class="radio-tile">
+              <div class="winter">
+                <label for="winter" class="radio-tile-label">Winter</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <input type="submit" class="simple_square_btn2" value="OK">
+
+
+    </form>
+</body>
+</html>

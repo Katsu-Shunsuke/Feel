@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>FEEL!!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/follow.css">
+  <section class="center-vertical">
+</head>
+<body>
+  <section>
+    <h1>フォロー中</h1>
+    <% follows=Follow.where(follow_id:current_user.id) %>
+    <% if !follows.nil? %>
+      <% follows.each do |follow| %>
+        <% opponent_user=User.find_by(id: follow.opponent_id) %>
+        <div>
+          <a href="/home/<%= follow.opponent_id %>"><%= opponent_user.name %></a>
+        </div>
+      <% end %>
+    <% end %>
+  </section>
+</body>
+</html>

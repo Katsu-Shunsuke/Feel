@@ -1,0 +1,432 @@
+body {
+  padding: 100px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+
+.radio-tile-group .input-container {
+  display: inline-block;
+  position: relative;
+  height: 5rem;
+  width: 7rem;
+  margin: 0.5rem;
+  padding: 20px;
+}
+.radio-tile-group .input-container .radio-button {
+  display: inline-block;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  cursor: pointer;
+}
+.radio-tile-group .input-container .radio-tile .red {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #616161;
+  border-radius: 5px;
+  padding: 1rem;
+  -webkit-transition: -webkit-transform 300ms ease;
+  transition: -webkit-transform 300ms ease;
+  transition: transform 300ms ease;
+  transition: transform 300ms ease, -webkit-transform 300ms ease;
+}
+.radio-tile-group .input-container .radio-tile .green {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #616161;
+  border-radius: 5px;
+  padding: 1rem;
+  -webkit-transition: -webkit-transform 300ms ease;
+  transition: -webkit-transform 300ms ease;
+  transition: transform 300ms ease;
+  transition: transform 300ms ease, -webkit-transform 300ms ease;
+}
+.radio-tile-group .input-container .radio-tile .blue {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #616161;
+  border-radius: 5px;
+  padding: 1rem;
+  -webkit-transition: -webkit-transform 300ms ease;
+  transition: -webkit-transform 300ms ease;
+  transition: transform 300ms ease;
+  transition: transform 300ms ease, -webkit-transform 300ms ease;
+}
+.radio-tile-group .input-container .radio-tile .yellow {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #616161;
+  border-radius: 5px;
+  padding: 1rem;
+  -webkit-transition: -webkit-transform 300ms ease;
+  transition: -webkit-transform 300ms ease;
+  transition: transform 300ms ease;
+  transition: transform 300ms ease, -webkit-transform 300ms ease;
+}
+.radio-tile-group .input-container .radio-tile .cyan {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #616161;
+  border-radius: 5px;
+  padding: 1rem;
+  -webkit-transition: -webkit-transform 300ms ease;
+  transition: -webkit-transform 300ms ease;
+  transition: transform 300ms ease;
+  transition: transform 300ms ease, -webkit-transform 300ms ease;
+}
+.radio-tile-group .input-container .radio-tile .magenta {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #616161;
+  border-radius: 5px;
+  padding: 1rem;
+  -webkit-transition: -webkit-transform 300ms ease;
+  transition: -webkit-transform 300ms ease;
+  transition: transform 300ms ease;
+  transition: transform 300ms ease, -webkit-transform 300ms ease;
+}
+.radio-tile-group .input-container .radio-tile .black {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #616161;
+  border-radius: 5px;
+  padding: 1rem;
+  -webkit-transition: -webkit-transform 300ms ease;
+  transition: -webkit-transform 300ms ease;
+  transition: transform 300ms ease;
+  transition: transform 300ms ease, -webkit-transform 300ms ease;
+}
+.radio-tile-group .input-container .radio-tile .white {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #616161;
+  border-radius: 5px;
+  padding: 1rem;
+  -webkit-transition: -webkit-transform 300ms ease;
+  transition: -webkit-transform 300ms ease;
+  transition: transform 300ms ease;
+  transition: transform 300ms ease, -webkit-transform 300ms ease;
+}
+.radio-tile-group .input-container .radio-tile .spring {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #616161;
+  border-radius: 5px;
+  padding: 1rem;
+  -webkit-transition: -webkit-transform 300ms ease;
+  transition: -webkit-transform 300ms ease;
+  transition: transform 300ms ease;
+  transition: transform 300ms ease, -webkit-transform 300ms ease;
+}
+.radio-tile-group .input-container .radio-tile .summer {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #616161;
+  border-radius: 5px;
+  padding: 1rem;
+  -webkit-transition: -webkit-transform 300ms ease;
+  transition: -webkit-transform 300ms ease;
+  transition: transform 300ms ease;
+  transition: transform 300ms ease, -webkit-transform 300ms ease;
+}
+.radio-tile-group .input-container .radio-tile .autumn {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #616161;
+  border-radius: 5px;
+  padding: 1rem;
+  -webkit-transition: -webkit-transform 300ms ease;
+  transition: -webkit-transform 300ms ease;
+  transition: transform 300ms ease;
+  transition: transform 300ms ease, -webkit-transform 300ms ease;
+}
+.radio-tile-group .input-container .radio-tile .winter {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #616161;
+  border-radius: 5px;
+  padding: 1rem;
+  -webkit-transition: -webkit-transform 300ms ease;
+  transition: -webkit-transform 300ms ease;
+  transition: transform 300ms ease;
+  transition: transform 300ms ease, -webkit-transform 300ms ease;
+}
+
+
+.radio-tile-group .input-container .radio-tile-label {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #616161;
+}
+.radio-tile-group .input-container .radio-button:checked + .radio-tile {
+  color: white;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+
+.radio-tile-group .input-container .radio-button:checked + .radio-tile .red{
+  background-color: rgb(255,0,0);
+  border: 2px solid   rgb(255,0,0);
+  color: white;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+.radio-tile-group .input-container .radio-button:checked + .radio-tile .green{
+  background-color:  rgb(0,255,0);
+  border: 2px solid  rgb(0,255,0);
+  color: white;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+.radio-tile-group .input-container .radio-button:checked + .radio-tile .blue{
+  background-color: rgb(0,0,255);
+  border: 2px solid rgb(0,0,255);
+  color: white;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+.radio-tile-group .input-container .radio-button:checked + .radio-tile .yellow{
+  background-color: rgb(255,255,0);
+  border: 2px solid rgb(255,255,0);
+  color: white;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+.radio-tile-group .input-container .radio-button:checked + .radio-tile .cyan{
+  background-color: rgb(0,255,255);
+  border: 2px solid rgb(0,255,255);
+  color: white;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+.radio-tile-group .input-container .radio-button:checked + .radio-tile .magenta{
+  background-color: rgb(255,0,255);
+  border: 2px solid rgb(255,0,255);
+  color: white;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+.radio-tile-group .input-container .radio-button:checked + .radio-tile .black{
+  background-color:  #000000;
+  border: 2px solid  #000000;
+  color: white;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+.radio-tile-group .input-container .radio-button:checked + .radio-tile .white{
+  background-color:  #ffffff;
+  border: 2px solid  #000000;
+  color: rgb(0, 0, 0);
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+.radio-tile-group .input-container .radio-button:checked + .radio-tile .spring{
+  background-color: rgb(255, 0, 128);
+  border: 2px solid   rgb(255, 0, 128);
+  color: white;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+.radio-tile-group .input-container .radio-button:checked + .radio-tile .summer{
+  background-color: rgb(1, 170, 43);
+  border: 2px solid   rgb(1, 170, 43);
+  color: white;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+.radio-tile-group .input-container .radio-button:checked + .radio-tile .autumn{
+  background-color: rgb(255, 145, 0);
+  border: 2px solid   rgb(255,145,0);
+  color: white;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+.radio-tile-group .input-container .radio-button:checked + .radio-tile .winter{
+  background-color: rgb(0, 255, 242);
+  border: 2px solid   rgb(0,255,242);
+  color: white;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+
+.radio-tile-group .input-container .radio-button:checked + .radio-tile .red .radio-tile-label {
+  color: white;
+  background-color:rgb(255,0,0);
+}
+.radio-tile-group .input-container .radio-button:checked + .radio-tile .green .radio-tile-label {
+  color: white;
+  background-color: rgb(0,255,0);
+}
+.radio-tile-group .input-container .radio-button:checked + .radio-tile .blue .radio-tile-label {
+  color: white;
+  background-color: rgb(0,0,255);
+}
+.radio-tile-group .input-container .radio-button:checked + .radio-tile .yellow .radio-tile-label {
+  color: black;
+  background-color: rgb(255,255,0);
+}
+.radio-tile-group .input-container .radio-button:checked + .radio-tile .cyan .radio-tile-label {
+  color: white;
+  background-color: rgb(0,255,255);
+}
+.radio-tile-group .input-container .radio-button:checked + .radio-tile .magenta .radio-tile-label {
+  color: white;
+  background-color: rgb(255,0,255);
+}
+.radio-tile-group .input-container .radio-button:checked + .radio-tile .black .radio-tile-label {
+  color: white;
+  background-color: #000000;
+}
+.radio-tile-group .input-container .radio-button:checked + .radio-tile .white .radio-tile-label {
+  color: rgb(0, 0, 0);
+  background-color: #ffffff;
+}
+.radio-tile-group .input-container .radio-button:checked + .radio-tile .spring .radio-tile-label {
+  color: white;
+  background-color: rgb(255,0,128);
+}
+.radio-tile-group .input-container .radio-button:checked + .radio-tile .summer .radio-tile-label {
+  color: white;
+  background-color: rgb(1, 170, 43);
+}
+.radio-tile-group .input-container .radio-button:checked + .radio-tile .autumn .radio-tile-label {
+  color: white;
+  background-color: rgb(255,145,0);
+}
+.radio-tile-group .input-container .radio-button:checked + .radio-tile .winter .radio-tile-label {
+  color: white;
+  background-color: rgb(0,255,242);
+}
+
+.simple_square_btn2 {
+	display: block;
+	position: relative;
+	width: 160px;
+	padding: 0.8em;
+	text-align: center;
+	text-decoration: none;
+	color: #1B1B1B;
+	background: #fff;
+	border:1px solid #1B1B1B;
+}
+.simple_square_btn2:hover {
+	 background: #1B1B1B;
+         color: #fff;
+	 cursor: pointer;
+	 text-decoration: none;
+}

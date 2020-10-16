@@ -1,0 +1,10 @@
+body {
+  padding: 100px;
+  font-family: "Sawarabi Gothic", sans-serif;
+}
+
+.post h1 {
+  padding-left: 0.5rem;
+  border-left: solid 10px black;
+  border-left: solid 10px var(--accent-color);
+}
