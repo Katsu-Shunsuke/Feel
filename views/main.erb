@@ -5,7 +5,6 @@
 	<title>FEEL!!</title>
 	<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/main.css">
-	<%= include_gon %>
 </head>
 <body>
 	<% number=Post.count %>
@@ -26,7 +25,7 @@
 	<div class="background">
 		<% if !posts_order.nil? %>
 			<script type="text/javascript">
-				var polygon_number=['polygon_0_number','polygon_1_number','polygon_2_number','polygon_3_number','polygon_4_number']
+				var polygon_number=['polygon_0_number','polygon_1_number','polygon_2_number']
 			</script>
 			<% posts.each_with_index do |user,i| %>
 				<% post=posts_order.find_by(user_id: user.user_id) %>
@@ -34,7 +33,7 @@
 					<script src="assets/js/particles.js"></script>
 
 					<script type="text/javascript">
-						polygon_number[i]= '<%=post.option1%>';
+						polygon_number[<%= i %>]= <%= post.option1%> ;
 					</script>
 
 					<script type="text/javascript" src="assets/js/setting.js"></script>

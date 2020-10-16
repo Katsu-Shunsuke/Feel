@@ -1,5 +1,7 @@
-var test_word = gon.test;
-alert(test_word);
+var polygon_0_number;
+var polygon_1_number;
+var polygon_2_number;
+
 
 particlesJS("particles-js-1", {
   particles: {
@@ -112,7 +114,7 @@ particlesJS("particles-js-2", {
       //シェイプの形でpolygonを指定した場合
       polygon: {
         //ポリゴン角数指定
-        nb_sides: polygon_2_number,
+        nb_sides: 5,
       },
     },
 
@@ -190,7 +192,7 @@ particlesJS("particles-js-0", {
       //シェイプの形でpolygonを指定した場合
       polygon: {
         //ポリゴン角数指定
-        nb_sides: polygon_0_number,
+        nb_sides: 6,
       },
     },
 

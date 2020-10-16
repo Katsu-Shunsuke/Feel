@@ -18,7 +18,6 @@ end
 get '/' do
   @posts=Post.all
   @users=User.all
-  gon.test = "OK"
   erb :main
 end
 
