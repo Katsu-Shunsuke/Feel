@@ -20,7 +20,7 @@
 	</div>
 
 	<% posts_order=Post.order(id:"DESC") %>
-	<% posts_order_user=posts_order.select(:user_id).distinct %>
+	<% posts_order_user=posts_order.group(:user_id) %>
 	<% posts=posts_order_user.limit(5) %>
 
 	<div class="background">
