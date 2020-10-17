@@ -30,16 +30,38 @@
 		<% if !posts_order.nil? %>
 			<script type="text/javascript">
 				var polygon_number={};
+				var speed_number={};
+				var opacity_number={};
+				var color_number={};
+				var size_number={};
+				var speeds=[0,5,4,3,2,1];
+				var opacity=[0,0.8,0.6,0.4,0.2,0.1];
+				var colors=["#","#ff0000","#00ff00","#0000ff","#ffff00","#00ffff","#ff00ff","#000000","#ffffff"];
+				var sizes=[0,200,100,50];
 			</script>
 			<% posts.each_with_index do |user,i| %>
 				<% post=posts_order.find_by(user_id: user.user_id) %>
+				<% property=Property.find_by(user_id: user.user_id) %>
 				<section id="particles-js-<%= i %>">
 
 					<script type="text/javascript">
 						polygon_number.polygon_<%= i %>_number= <%= post.option1%> +2;
+						speed_number.speed_<%= i %>_number    = speeds[<%= post.option2 %>];
+						opacity_number.opacity_<%= i %>_number= opacity[<%= post.option3 %>];
 					</script>
+					<% if  !property.nil? %>
+						<script type="text/javascript">
+							color_number.color_<%= i %>_number    = colors[<%= property.favorite1 %>];
+							size_number.size_<%= i %>_number      = sizes[<%= property.favorite2 %>];
+						</script>
+					<% else %>
+						<script type="text/javascript">
+							color_number.color_<%= i %>_number    = "#000000";
+							size_number.size_<%= i %>_number      = 100;
+						</script>
+					<% end %>
 					<script type="text/javascript" src="assets/js/setting.js"></script>
-					<div><h2><%=i%></h2></div>
+
 				</section>
 			<% end %>
 		<% end %>

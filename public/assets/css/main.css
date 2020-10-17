@@ -26,28 +26,32 @@ body {
 }
 
 .background{
+  margin:100px;
   background-color: #ebcdcd7c;
 }
 
 #particles-js-1 {
+  position: absolute;
   width: 1000px;
   height: 500px;
   margin: 0 auto;
-  background-color: rgba(241, 217, 221, 0.253);
+  background-color: rgba(108, 104, 228, 0);
   margin-left: 5em;
   margin-right: 5em;
   margin-top: 5em;
 }
 #particles-js-2 {
+  position: absolute;
   width: 1000px;
   height: 500px;
   margin: 0 auto;
-  background-color: rgba(241, 217, 221, 0.247);
+  background-color: rgba(90, 201, 123, 0);
   margin-left: 5em;
   margin-right: 5em;
   margin-top: 5em;
 }
 #particles-js-0 {
+  position: absolute;
   width: 1000px;
   height: 500px;
   margin: 0 auto;

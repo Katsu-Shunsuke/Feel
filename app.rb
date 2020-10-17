@@ -19,7 +19,7 @@ end
 get '/' do
   @posts=Post.all
   @users=User.all
-  @List=[3,4,5]
+
   erb :main
 end
 
@@ -40,7 +40,11 @@ get '/signup' do
 end
 
 post '/signup' do
-  @user=User.create(name:params[:name], password:params[:password], password_confirmation:params[:password_confirmation])
+  @user=User.create({
+    name:params[:name],
+    password:params[:password],
+    password_confirmation:params[:password_confirmation]
+  })
   if @user.persisted?
     session[:user]=@user.id
   end
