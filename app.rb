@@ -17,7 +17,6 @@ end
 get '/' do
   @posts=Post.all
   @users=User.all
-
   erb :main
 end
 
