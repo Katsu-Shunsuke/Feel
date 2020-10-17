@@ -5,8 +5,6 @@ require 'sinatra/reloader' if development?
 require './models'
 require 'dotenv/load'
 
-require 'gon-sinatra'
-
 enable :sessions
 
 helpers do
