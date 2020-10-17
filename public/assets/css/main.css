@@ -18,6 +18,12 @@
   letter-spacing: 0.1em;
   margin-left: 0.1em;
   color: rgba(0, 0, 0, 0.8);
+
+}
+
+.conA h1 a{
+  text-decoration: none;
+  color:#000000;
 }
 
 

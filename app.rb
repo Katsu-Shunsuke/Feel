@@ -117,3 +117,7 @@ post '/property/edit' do
   property.save!
   redirect '/property'
 end
+
+get '/explain' do
+  erb :explain
+end
