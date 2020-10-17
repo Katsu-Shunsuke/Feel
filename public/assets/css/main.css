@@ -26,41 +26,52 @@ body {
 }
 
 .background{
-  margin:100px;
-  background-color: #ebcdcd7c;
+  position: relative;
+  background-color: #e6323200;
+  z-index: 0;
 }
 
 #particles-js-1 {
   position: absolute;
-  width: 1000px;
-  height: 500px;
+  width: 100%;
+  min-height: 100vh;
   margin: 0 auto;
   background-color: rgba(108, 104, 228, 0);
-  margin-left: 5em;
-  margin-right: 5em;
-  margin-top: 5em;
+  z-index: auto;
 }
 #particles-js-2 {
   position: absolute;
-  width: 1000px;
-  height: 500px;
+  width: 100%;
+  min-height: 100vh;
   margin: 0 auto;
   background-color: rgba(90, 201, 123, 0);
-  margin-left: 5em;
-  margin-right: 5em;
-  margin-top: 5em;
+  z-index: auto;
 }
 #particles-js-0 {
   position: absolute;
-  width: 1000px;
-  height: 500px;
+  width: 100%;
+  min-height: 100vh;
   margin: 0 auto;
-  background-color: rgba(241, 217, 221, 0.267);
-  margin-left: 5em;
-  margin-right: 5em;
-  margin-top: 5em;
+  background-color: rgba(241, 217, 221, 0);
+  z-index: auto;
 }
 
+#particles-js-3 {
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  background-color: rgba(241, 217, 221, 0);
+  z-index: auto;
+}
+#particles-js-4 {
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  background-color: rgba(241, 217, 221, 0);
+  z-index: auto;
+}
 section {
   position: absolute;
   width: 100vw;
@@ -77,13 +88,20 @@ section h1 {
   z-index: 1;
 }
 
-a{
+.list a{
   text-decoration: none;
   color:black;
+  z-index: auto;
 }
 
 @media (min-width: 768px) {
   .conA h1 {
     font-size: 78px;
   }
+}
+
+.list{
+  position: relative;
+  margin:0 0 10px auto;
+  z-index: 20;
 }

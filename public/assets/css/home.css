@@ -8,3 +8,59 @@ body {
   border-left: solid 10px black;
   border-left: solid 10px var(--accent-color);
 }
+
+.background{
+  position: relative;
+  background-color: #e6323200;
+  z-index: 0;
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  background-color: rgba(108, 104, 228, 0.322);
+  z-index: auto;
+}
+#particles-js-1 {
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  background-color: rgba(108, 104, 228, 0);
+  z-index: auto;
+}
+#particles-js-2 {
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  background-color: rgba(90, 201, 123, 0);
+  z-index: auto;
+}
+#particles-js-0 {
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  background-color: rgba(241, 217, 221, 0);
+  z-index: auto;
+}
+
+#particles-js-3 {
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  background-color: rgba(241, 217, 221, 0);
+  z-index: auto;
+}
+#particles-js-4 {
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  background-color: rgba(241, 217, 221, 0);
+  z-index: auto;
+}

@@ -76,6 +76,7 @@ end
 get '/home/:id' do
   @posts_user=Post.where(user_id: params[:id])
   @user=User.find_by(id: params[:id])
+  @property=Property.find_by(user_id: current_user)
   erb :home
 end
 
