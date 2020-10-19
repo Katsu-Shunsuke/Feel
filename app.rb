@@ -107,7 +107,7 @@ post '/property/new' do
     favorite1:params[:radio1],
     favorite2:params[:radio2]
   })
-  redirect '/property'
+  redirect '/'
 end
 
 post '/property/edit' do
@@ -115,7 +115,7 @@ post '/property/edit' do
   property.favorite1=params[:radio1]
   property.favorite2=params[:radio2]
   property.save!
-  redirect '/property'
+  redirect '/'
 end
 
 get '/explain' do
